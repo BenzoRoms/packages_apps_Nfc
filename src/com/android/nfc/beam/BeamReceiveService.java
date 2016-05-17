@@ -89,6 +89,7 @@ public class BeamReceiveService extends Service implements BeamTransferManager.C
     public void onDestroy() {
         super.onDestroy();
         unregisterReceiver(mBluetoothStateReceiver);
+        mTransferManager = null;
     }
 
     boolean prepareToReceive(BeamTransferRecord transferRecord) {
