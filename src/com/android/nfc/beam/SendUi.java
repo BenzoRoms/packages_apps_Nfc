@@ -894,4 +894,8 @@ public class SendUi implements Animator.AnimatorListener, View.OnTouchListener,
     @Override
     public void onActionModeFinished(ActionMode mode) {
     }
+
+    public boolean isSendUiInIdleState() {
+        return mState == STATE_IDLE;
+    }
 }
